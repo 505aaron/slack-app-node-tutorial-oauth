@@ -1,0 +1,35 @@
+{
+  "name": "slack-app-node-tutorial-oauth",
+  "version": "1.0.0",
+  "description": "Node.js Slack Application OAuth Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "lab -c -L",
+    "test-cover": "lab -c -r html -o ./test/artifacts/coverage.html && open ./test/artifacts/coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/505aaron/slack-app-node-tutorial-oauth"
+  },
+  "author": "Aaron Cordova <acordova05@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/505aaron/slack-app-node-tutorial-oauth/issues"
+  },
+  "homepage": "https://github.com/505aaron/slack-app-node-tutorial-oauth",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "confidence": "3.x.x",
+    "glue": "4.x.x",
+    "hapi": "15.x.x",
+    "hoek": "4.x.x"
+  },
+  "devDependencies": {
+    "code": "3.x.x",
+    "lab": "11.x.x",
+    "nodemon": "1.x.x"
+  }
+}
