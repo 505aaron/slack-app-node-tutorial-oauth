@@ -19,7 +19,7 @@ lab.experiment('Manifest', () => {
 
     lab.test('it gets manifest meta data', (done) => {
 
-        Code.expect(Manifest.meta('/')).to.match(/this file defines the plot device/i);
+        Code.expect(Manifest.meta('/')).to.match(/This file defines the server configuration, connections, and plugin registrations\./i);
         done();
     });
 });

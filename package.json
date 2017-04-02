@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "lab -c -L",
+    "debug": "nodemon debug server.js",
+    "test": "lab -L -I fetch",
     "test-cover": "lab -c -r html -o ./test/artifacts/coverage.html && open ./test/artifacts/coverage.html"
   },
   "repository": {
@@ -22,14 +23,23 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
+    "bell": "^8.6.0",
     "confidence": "3.x.x",
     "glue": "4.x.x",
     "hapi": "16.x.x",
-    "hoek": "4.x.x"
+    "hapi-auth-cookie": "^7.0.0",
+    "hapi-methods-injection": "^1.1.0",
+    "hoek": "^4.1.0",
+    "joi": "^10.3.3",
+    "node-fetch": "^1.6.3"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "code": "4.x.x",
+    "fetch-mock": "^5.9.4",
     "lab": "13.x.x",
-    "nodemon": "1.x.x"
+    "nodemon": "1.x.x",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0"
   }
 }

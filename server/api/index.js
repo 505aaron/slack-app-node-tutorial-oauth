@@ -5,16 +5,22 @@ exports.register = function (server, options, next) {
     server.route({
         method: 'GET',
         path: '/',
-        handler: function (request, reply) {
+        config: {
+            handler: function (request, reply) {
 
-            reply({ message: 'Welcome to the plot device.' });
+                return request.server.methods.models.slack.getToken().then((token) => {
+
+                    return fetch(`https://slack.com/api/team.info?token=${token}`);
+                }).then((response) => {
+
+                    return reply(response.json());
+                }).catch(reply);
+            }
         }
     });
 
-
     next();
 };
-
 
 exports.register.attributes = {
     name: 'api'
