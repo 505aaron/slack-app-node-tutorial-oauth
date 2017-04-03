@@ -12,18 +12,11 @@ exports.register = function (server, options, next) {
                 const account = request.auth.credentials;
                 const profile = account.profile;
 
-                request
-                    .server
-                    .log([
+                request.server.log([
                         'oauth', 'slack'
                     ], { slackTeamUrl: account.profile.raw.url });
 
-                return request
-                    .server
-                    .methods
-                    .models
-                    .slack
-                    .saveToken(profile.access_token)
+                return request.server.methods.models.slack.saveToken(profile.access_token)
                     .then(() => {
 
                         reply.redirect('/authenticate/success');

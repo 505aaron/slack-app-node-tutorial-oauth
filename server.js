@@ -1,5 +1,6 @@
 'use strict';
 
+require('isomorphic-fetch');
 const Composer = require('./index');
 
 Composer((err, server) => {

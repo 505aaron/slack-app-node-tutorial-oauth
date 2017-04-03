@@ -30,8 +30,8 @@
     "hapi-auth-cookie": "^7.0.0",
     "hapi-methods-injection": "^1.1.0",
     "hoek": "^4.1.0",
-    "joi": "^10.3.3",
-    "node-fetch": "^1.6.3"
+    "isomorphic-fetch": "^2.2.1",
+    "joi": "^10.3.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
