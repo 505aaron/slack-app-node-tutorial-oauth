@@ -23,5 +23,5 @@ ngrok http 3000
 ```
 
 ### Authenticate
-1. Navigate to <host>/authenticate
-2. Navigate to <host>.
+1. Navigate to host/authenticate
+2. Navigate to your host.
