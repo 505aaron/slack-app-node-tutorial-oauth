@@ -1,5 +1,5 @@
 # slack-app-node-tutorial-oauth
-Node.js Slack Application OAuth Tutorial. Red a detailed write-up [https://www.lessrework.com/2017/04/slack-app-tutorial-oauth/](https://www.lessrework.com/2017/04/slack-app-tutorial-oauth/)
+Node.js Slack Application OAuth Tutorial. Read a detailed write-up [https://www.lessrework.com/2017/04/slack-app-tutorial-oauth/](https://www.lessrework.com/2017/04/slack-app-tutorial-oauth/)
 
 ## Development
 
